@@ -1,0 +1,95 @@
+.exchange-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.exchange-container h1 {
+    margin: 4rem 8rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.exchange-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 0;
+}
+
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.content p {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    color: white;
+    font-size: 23px;
+    max-width: 250px;
+    z-index: 111;
+    font-weight: 500;
+}
+
+@media (max-width: 835px) {
+    .exchange-container h1 {
+        margin: 2rem 4rem;
+        margin-top: 6rem;
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    .exchange-content {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* snapping behavior */
+    }
+
+    .content {
+        flex: 0 0 100%;             
+        width: 100%;                
+        scroll-snap-align: start;
+        box-sizing: border-box;    
+    }
+
+    .content p {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 555px) {
+    .exchange-container h1 {
+        font-size: 2rem;
+    }
+}
+
+

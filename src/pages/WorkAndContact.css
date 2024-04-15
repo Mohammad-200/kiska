@@ -1,0 +1,36 @@
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr; 
+}
+
+.work-grid-container div {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; 
+    transition: transform 0.5s ease;
+}
+
+
+
+.item-1, .item-8 {
+    grid-column: span 2;
+    grid-row: span 2; 
+    aspect-ratio: 1 / 1; /* Ensures that the area remains square */
+}
+
+
+.work-check {
+    font-size: 3.5rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+@media (max-width: 790px) {
+    
+}
+
+
