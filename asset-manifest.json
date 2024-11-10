@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kiska/static/css/main.2dcc1de0.css",
+    "main.js": "/kiska/static/js/main.6f0413ba.js",
+    "static/media/banner-kiska-video.mp4": "/kiska/static/media/banner-kiska-video.e1d5608aa555624a94e0.mp4",
+    "index.html": "/kiska/index.html",
+    "main.2dcc1de0.css.map": "/kiska/static/css/main.2dcc1de0.css.map",
+    "main.6f0413ba.js.map": "/kiska/static/js/main.6f0413ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dcc1de0.css",
+    "static/js/main.6f0413ba.js"
+  ]
+}
