@@ -1,175 +1,174 @@
 .talk-to-us-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    padding: 0 4rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 0 4rem;
 }
 
 .talk-left h3 {
-    max-width: 400px;
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+  max-width: 400px;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
-.talk-left p{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: rgb(111, 111, 111);
+.talk-left p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(111, 111, 111);
 }
 
 .talk-left a {
-    text-decoration: underline;
-    color: black;
-    font-size: 18px; 
-    
+  text-decoration: underline;
+  color: black;
+  font-size: 18px;
 }
 
 .talk-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .form-style {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.input-style, .textarea-style {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid gray;
-    height: 2rem;
-    outline: none;
-    width: 500px;
-    max-width: 500px;
+.input-style,
+.textarea-style {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  height: 2rem;
+  outline: none;
+  width: 500px;
+  max-width: 500px;
 }
 
-.input-style:focus, .textarea-style:focus {
-    border: 2px solid rgb(0, 0, 0);
-    height: 30px;
-    border-radius: 4px;
-    padding-left: 5px;
-    
-}
-
+/* .input-style:focus,
+.textarea-style:focus {
+  border: 2px solid rgb(0, 0, 0);
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 5px;
+} */
 
 .agree-submit {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .checkbox-style {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 10px;
 }
 
-.checkbox-style input[type='checkbox'] {
-    display: none;
+.checkbox-style input[type="checkbox"] {
+  display: none;
 }
 
 .custom-checkbox {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border:  1px solid black;
-    margin-right: 10px;
-    cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .custom-checkbox:hover {
-    background-color: rgb(237, 237, 237);
+  background-color: rgb(237, 237, 237);
 }
 
 .custom-checkbox::after {
-    content: '';
-    display: none;
-    position: absolute;
-    left: 6px;
-    top: 14px;
-    width: 5px;
-    height: 10px;
-    border: solid black;
-    border-width:  0 2px 2px 0;
-    transform: rotate(45deg);
+  content: "";
+  display: none;
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .real-checkbox:checked + .custom-checkbox::after {
-    display: block;
+  display: block;
 }
 
 .privacy-policy {
-    text-decoration: underline;
-    padding: 0 5px;
-    font-weight: bold;
-    cursor: pointer;
+  text-decoration: underline;
+  padding: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .submit-button {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    transition: all .3s;
-    cursor: pointer;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: rgb(54, 54, 54);
+  background-color: rgb(54, 54, 54);
 }
 
-
 @media (max-width: 990px) {
-    .talk-left h3 {
-        /* max-width: 400px; */
-        font-size: 3rem;
-    }
-    
-    .talk-left p{
-        font-size: 16px;
-    }
+  .talk-left h3 {
+    /* max-width: 400px; */
+    font-size: 3rem;
+  }
 
-    .input-style, .textarea-style {
-        max-width: 400px;
-    }
+  .talk-left p {
+    font-size: 16px;
+  }
 
-    .checkbox-style {
-        font-size: 14px;
-    }
+  .input-style,
+  .textarea-style {
+    max-width: 400px;
+  }
+
+  .checkbox-style {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 835px) {
-    .talk-left h3 {
-        min-width: 500px;
-        font-size: 2.5rem;
-        padding-top: 3rem;
-    }
+  .talk-left h3 {
+    min-width: 500px;
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
 
-    .talk-to-us-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: start;
-        padding: 0 2rem;
-    }   
+  .talk-to-us-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: start;
+    padding: 0 2rem;
+  }
 
-    .input-style, .textarea-style {
-        width: 100%;
-    }
+  .input-style,
+  .textarea-style {
+    width: 100%;
+  }
 
-    .submit-button {
-        font-size: 15px;
-    }
-
+  .submit-button {
+    font-size: 15px;
+  }
 }
